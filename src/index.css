@@ -1,0 +1,60 @@
+.body {
+	padding-top: 70px;
+	background-color: rgb(46, 44, 44);
+}
+
+.title {
+	color: white;
+}
+
+.card-body {
+	background-color: purple;
+	border-radius: 3px;
+}
+
+.link {
+	color: white;
+}
+
+.btn-success {
+	background-color: black !important;
+	border-color: purple !important;
+}
+
+.card-title {
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+.redText {
+	color: red;
+}
+
+.viewer-count {
+	text-align: center;
+	color: white;
+}
+
+.viewer-color {
+	color: purple;
+	font-weight: bold;
+}
+
+.navbar {
+	background-color: rgba(128, 0, 128, 0.7);
+}
+
+.nav-text {
+	color: white;
+	font-weight: bold;
+}
+
+#twitch-embed {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
