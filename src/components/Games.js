@@ -25,30 +25,31 @@ function Games() {
 	return (
 		<div className="body">
 			<h1 className="title">Most Popular Games</h1>
-			<div className="row">
-				{games.map((game) => (
-					<div className="col-3 mt-5">
-						<div className="card">
-							<img className="card-img-top" src={game.box_art_url} alt={game.name} />
-							<div className="card-body">
-								<h5 className="card-title">
-									#{counter++} {game.name}
-								</h5>
-								<Link
-									className="link"
-									to={{
-										pathname: 'game/' + game.name,
-										state: {
-											gameID: game.id
-										}
-									}}
-								>
-									<button className="btn btn-success">{game.name} streams</button>
-								</Link>
+			<div className="container">
+				<div className="row">
+					{games.map((game) => (
+						<div className="col-4 mt-5">
+							<div className="card">
+								<img className="card-img-top" src={game.box_art_url} alt={game.name} />
+								<div className="card-body text-center">
+									<Link
+										className="link"
+										to={{
+											pathname: 'game/' + game.name,
+											state: {
+												gameID: game.id
+											}
+										}}
+									>
+										<button className="btn btn-success">
+											#{counter++} {game.name}
+										</button>
+									</Link>
+								</div>
 							</div>
 						</div>
-					</div>
-				))}
+					))}
+				</div>
 			</div>
 		</div>
 	);
